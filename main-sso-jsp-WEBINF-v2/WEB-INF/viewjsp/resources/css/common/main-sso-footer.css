@@ -1,1 +1,25 @@
-/* main-sso-footer.css */
+/* =====================================================
+   MAIN SSO FOOTER
+   Prefix: main-sso-footer-*
+   ===================================================== */
+
+#main-sso-footer-root {
+  background: #0b2a3f;
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  padding: 14px 16px;
+  text-align: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Keep footer readable on small screens */
+@media (max-width: 480px) {
+  #main-sso-footer-root {
+    font-size: 11px;
+    padding: 12px;
+  }
+}
