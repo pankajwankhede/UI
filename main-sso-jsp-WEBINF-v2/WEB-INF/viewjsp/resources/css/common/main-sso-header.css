@@ -1,5 +1,3 @@
-/* main-sso-header.css */
-
 /* =====================================================
    MAIN SSO HEADER
    Prefix: main-sso-header-*
@@ -54,4 +52,35 @@
   white-space: nowrap;
 }
 
-/* Right action*
+/* Right actions */
+.main-sso-header-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-sso-header-support-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.main-sso-header-support-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .main-sso-header-container {
+    padding: 12px;
+  }
+
+  .main-sso-header-title {
+    font-size: 14px;
+  }
+}
