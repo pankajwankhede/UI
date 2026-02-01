@@ -1,1 +1,244 @@
 /* main-sso-login.css */
+
+/* ===== MAIN SSO LOGIN (main-sso-*) ===== */
+
+#main-sso-login-page{
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  background: #d9eef7;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f172a;
+}
+
+#main-sso-login-main{
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  padding: 36px 16px;
+}
+
+/* Big white card in center */
+#main-sso-login-card{
+  width: 100%;
+  max-width: 1100px;
+
+  background: rgba(255,255,255,0.86);
+  border: 1px solid rgba(15,23,42,0.08);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+
+  padding: 34px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 32px;
+}
+
+/* LEFT side */
+.main-sso-login-left{
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 55%;
+          flex: 1 1 55%;
+}
+
+.main-sso-login-title{
+  margin: 0 0 16px;
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #0b1220;
+}
+
+.main-sso-login-desc{
+  margin: 0 0 22px;
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(15,23,42,0.78);
+}
+
+.main-sso-login-linkline{
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(15,23,42,0.80);
+}
+
+.main-sso-login-link{
+  color: #0b5bd3;
+  text-decoration: none;
+}
+.main-sso-login-link:hover{ text-decoration: underline; }
+
+/* RIGHT column */
+.main-sso-login-right{
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  gap: 14px;
+}
+
+/* Sign in white panel */
+.main-sso-login-signin{
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(15,23,42,0.08);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.main-sso-login-form-title{
+  margin: 0 0 14px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgba(15,23,42,0.80);
+}
+
+/* Error alert */
+.main-sso-login-alert{
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  font-size: 14px;
+}
+.main-sso-login-alert--error{
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #9f1239;
+}
+
+.main-sso-login-form{ margin-top: 10px; }
+.main-sso-login-field{ margin-bottom: 14px; }
+
+.main-sso-login-control{ position: relative; }
+
+.main-sso-login-icon{
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.main-sso-login-input{
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.18);
+  padding: 0 12px 0 36px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.main-sso-login-input:focus{
+  border-color: rgba(11,91,211,0.8);
+  box-shadow: 0 0 0 3px rgba(11,91,211,0.15);
+}
+
+.main-sso-login-help{
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0b5bd3;
+  text-decoration: none;
+}
+.main-sso-login-help:hover{ text-decoration: underline; }
+
+.main-sso-login-btn-primary{
+  width: 100%;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background: #0b2a3f;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.main-sso-login-btn-primary:hover{ filter: brightness(1.06); }
+
+/* Registration dark panel (below sign-in, like screenshot) */
+.main-sso-login-register{
+  border-radius: 10px;
+  padding: 18px;
+  background: linear-gradient(180deg,#2b2f36,#1a1d22);
+  color: #fff;
+  text-align: center;
+}
+
+.main-sso-login-register-title{
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.main-sso-login-register-subtitle{
+  opacity: 0.85;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.main-sso-login-btn-outline{
+  display: inline-block;
+  height: 38px;
+  line-height: 36px;
+  padding: 0 18px;
+  border-radius: 8px;
+  border: 2px solid rgba(255,255,255,0.75);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+.main-sso-login-btn-outline:hover{ background: rgba(255,255,255,0.10); }
+
+/* Responsive: stack left/right */
+@media (max-width: 900px){
+  #main-sso-login-card{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 22px;
+  }
+  .main-sso-login-title{ font-size: 34px; }
+}
+@media (max-width: 480px){
+  #main-sso-login-card{ padding: 16px; border-radius: 12px; }
+  .main-sso-login-title{ font-size: 28px; }
+}
